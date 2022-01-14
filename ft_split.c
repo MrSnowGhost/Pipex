@@ -6,11 +6,10 @@
 /*   By: ybensell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 08:58:54 by ybensell          #+#    #+#             */
-/*   Updated: 2022/01/12 10:06:34 by ybensell         ###   ########.fr       */
+/*   Updated: 2022/01/14 13:07:50 by ybensell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "pipex.h"
-
 
 static int	words_numb(const char *s, char c)
 {
