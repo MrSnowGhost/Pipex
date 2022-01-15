@@ -6,14 +6,14 @@
 /*   By: ybensell <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:27:55 by ybensell          #+#    #+#             */
-/*   Updated: 2022/01/14 18:55:52 by ybensell         ###   ########.fr       */
+/*   Updated: 2022/01/15 09:47:26 by ybensell         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "pipex.h"
 
 void	exec_cmd2(char **argv, char **env, t_var *var)
 {
-	var->fd2 = open(argv[4], O_WRONLY | O_CREAT, 0644);
+	var->fd2 = open(argv[4], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 	if (var->fd2 == -1)
 		perror("Error");
 	var->cmd = ft_split(argv[3], ' ');
